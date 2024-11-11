@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
-	base: '/basevm',
+	base: '/webvm',
 	resolve: {
 		alias: {
 			'/config_terminal': process.env.WEBVM_MODE == "github" ? 'config_github_terminal.js' : 'config_public_terminal.js',

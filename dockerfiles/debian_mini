@@ -16,6 +16,6 @@ RUN echo "alias sudo='sudo.old -S $1'" > /home/teilnehmender/.bash_aliases
 # We set WORKDIR, as this gets extracted by Webvm to be used as the cwd. This is optional.
 WORKDIR /home/teilnehmender/
 # We set env, as this gets extracted by Webvm. This is optional.
-ENV HOME="/home/teilnehmender" TERM="xterm" USER="user" SHELL="/bin/bash" EDITOR="vim" LANG="en_US.UTF-8" LC_ALL="C"
+ENV HOME="/home/teilnehmender" TERM="xterm" USER="teilnehmender" SHELL="/bin/bash" EDITOR="vim" LANG="en_US.UTF-8" LC_ALL="C"
 RUN echo 'root:password' | chpasswd
 CMD [ "/bin/bash" ]
